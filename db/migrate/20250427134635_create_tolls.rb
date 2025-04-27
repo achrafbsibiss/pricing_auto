@@ -4,7 +4,7 @@ class CreateTolls < ActiveRecord::Migration[8.0]
       t.references :origin, null: false, foreign_key: { to_table: :cities }
       t.references :destination, null: false, foreign_key: { to_table: :cities }
       t.decimal :car_price, precision: 8, scale: 2
-      t.decimal :truck_price, precision: 8, scale: 2  
+      t.decimal :truck_price, precision: 8, scale: 2
       t.decimal :bus_price, precision: 8, scale: 2
 
       t.timestamps
